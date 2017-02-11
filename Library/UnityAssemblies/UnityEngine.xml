@@ -7594,10 +7594,10 @@ The values passed to stereoTargetEye are found in the StereoTargetEyeMask enum. 
     </member>
     <member name="M:UnityEngine.Canvas.GetETC1SupportedCanvasMaterial">
       <summary>
-        <para>Gets or generates the ETC1 material.</para>
+        <para>Gets or generates the ETC1 Material.</para>
       </summary>
       <returns>
-        <para>The generated ETC1 material from the Canvas.</para>
+        <para>The generated ETC1 Material from the Canvas.</para>
       </returns>
     </member>
     <member name="T:UnityEngine.CanvasGroup">
@@ -7772,7 +7772,7 @@ See Also: CanvasRenderer.EnableRectClipping, CanvasRenderer.DisableRectClipping.
     </member>
     <member name="M:UnityEngine.CanvasRenderer.SetAlphaTexture(UnityEngine.Texture)">
       <summary>
-        <para>The Alpha Texture that will be passed to the shader under the _AlphaTex property.</para>
+        <para>The Alpha Texture that will be passed to the Shader under the _AlphaTex property.</para>
       </summary>
       <param name="texture">The Texture to be passed.</param>
     </member>
@@ -25257,10 +25257,19 @@ Note that updating a light probe volume every frame may be costly. The cost depe
     </member>
     <member name="M:UnityEngine.Material.SetBuffer(System.String,UnityEngine.ComputeBuffer)">
       <summary>
-        <para>Set a ComputeBuffer value.</para>
+        <para>Set a named ComputeBuffer value.</para>
       </summary>
-      <param name="propertyName"></param>
-      <param name="buffer"></param>
+      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
+      <param name="name">Property name.</param>
+      <param name="value">ComputeBuffer value to set.</param>
+    </member>
+    <member name="M:UnityEngine.Material.SetBuffer(System.Int32,UnityEngine.ComputeBuffer)">
+      <summary>
+        <para>Set a named ComputeBuffer value.</para>
+      </summary>
+      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
+      <param name="name">Property name.</param>
+      <param name="value">ComputeBuffer value to set.</param>
     </member>
     <member name="M:UnityEngine.Material.SetColor(System.String,UnityEngine.Color)">
       <summary>
@@ -38088,7 +38097,7 @@ See Also: ReflectionProbe.RenderProbe.</para>
     </member>
     <member name="F:UnityEngine.Rendering.ReflectionProbeRefreshMode.ViaScripting">
       <summary>
-        <para>Using this option indicates that the probe will never be automatically updated by Unity. This is useful if you wish to completely control the probe refresh behavior via scripting.
+        <para>Using this option indicates that the probe will never be automatically updated by Unity while a game is running. This is useful if you wish to completely control the probe refresh behavior via scripting.
 
 See Also: ReflectionProbe.RenderProbe.</para>
       </summary>

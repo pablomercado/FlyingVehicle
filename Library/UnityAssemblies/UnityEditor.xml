@@ -16747,6 +16747,11 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
         <para>Set this property with your Apple Developer Team ID. You can find this on the Apple Developer website under &lt;a href="https:developer.apple.comaccount#membership"&gt; Account &gt; Membership &lt;/a&gt; . This sets the Team ID for the generated Xcode project, allowing developers to use the Build and Run functionality. An Apple Developer Team ID must be set here for automatic signing of your app.</para>
       </summary>
     </member>
+    <member name="P:UnityEditor.PlayerSettings.iOS.appleEnableAutomaticSigning">
+      <summary>
+        <para>Set this property to true for Xcode to attempt to automatically sign your app based on your appleDeveloperTeamID.</para>
+      </summary>
+    </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.applicationDisplayName">
       <summary>
         <para>iOS application display name.</para>
@@ -16765,6 +16770,11 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
     <member name="P:UnityEditor.PlayerSettings.iOS.exitOnSuspend">
       <summary>
         <para>Application should exit when suspended to background.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PlayerSettings.iOS.iOSManualProvisioningProfileID">
+      <summary>
+        <para>A provisioning profile Universally Unique Identifier (UUID) that Xcode will use to build your iOS app in Manual Signing mode.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.locationUsageDescription">
@@ -16825,6 +16835,11 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
     <member name="P:UnityEditor.PlayerSettings.iOS.targetOSVersion">
       <summary>
         <para>Deployment minimal version of iOS.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PlayerSettings.iOS.tvOSManualProvisioningProfileID">
+      <summary>
+        <para>A provisioning profile Universally Unique Identifier (UUID) that Xcode will use to build your tvOS app in Manual Signing mode.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.useOnDemandResources">
@@ -21041,11 +21056,6 @@ Values match the ProceduralMaterial::ProceduralLoadingBehavior enum.</param>
     <member name="T:UnityEditor.TextureImporterSettings">
       <summary>
         <para>Stores settings of a TextureImporter.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.TextureImporterSettings.allowsAlphaSplit">
-      <summary>
-        <para>Allow Alpha splitting on the imported texture when needed (for example ETC1 compression for textures with transparency).</para>
       </summary>
     </member>
     <member name="P:UnityEditor.TextureImporterSettings.cubemapConvolution">
