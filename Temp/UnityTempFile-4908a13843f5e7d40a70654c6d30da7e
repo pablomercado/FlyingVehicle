@@ -85,6 +85,7 @@
 -define:ENABLE_VSTU
 Assets/Bullet.cs
 Assets/Gun.cs
+Assets/HomingMissile.cs
 Assets/ShipController.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
