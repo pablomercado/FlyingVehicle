@@ -35,7 +35,7 @@ public class ShipController : MonoBehaviour {
 
         transform.position += movingVector;
         transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal"));
-        Debug.Log(movingVector.magnitude);
+        //Debug.Log(movingVector.magnitude);
 
         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
 
@@ -63,7 +63,7 @@ public class ShipController : MonoBehaviour {
             StartCoroutine(TransitionTurboScalator(1f, 2f));
         }
 
-        Debug.Log((brake == false && turbo == false));
+        //Debug.Log((brake == false && turbo == false));
 
         Speed -= transform.forward.y * Time.deltaTime * TurboScalar;
         if (Speed < 10f)
@@ -89,7 +89,7 @@ public class ShipController : MonoBehaviour {
                 {
                     t += Time.deltaTime;
                     TurboScalar = Mathf.Lerp(a, b, t);
-                    Debug.Log("t: " + t);
+                    //Debug.Log("t: " + t);
                     yield return null;
                 }
                 coroutineRunning = false;
