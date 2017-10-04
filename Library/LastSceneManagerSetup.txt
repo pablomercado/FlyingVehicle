@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TestControl.unity
+- path: Assets/BezierCircleAnimation.unity
   isLoaded: 1
   isActive: 1
