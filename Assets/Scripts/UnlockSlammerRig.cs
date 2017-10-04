@@ -23,6 +23,21 @@ public class UnlockSlammerRig : MonoBehaviour {
     [SerializeField] private float radiousAnimationTime = 1.5f;
     [SerializeField] private AnimationCurve animationCurve;
     [SerializeField] private GameObject slammerPosition;
+    [SerializeField] private Vector3 slammerInitialScale = Vector3.one * 1.8f;
+    [SerializeField] private Vector3 slammerFinalScale = Vector3.one * 0.3f;
+
+    [Space(5)]
+    [Header("Sequence timming")]
+    [Range(0f, 1f)] [SerializeField] private float whenToMoveCirlceToSlammer = 0.35f;
+    [Range(0f, 1f)] [SerializeField] private float whenShowSpecialFX = 0.5f;
+    [Range(0f, 1f)] [SerializeField] private float whenRadiousAnimation = 0.7f;
+    [Range(0f, 1f)] [SerializeField] private float whenContemplateSlammer = 0.83f;
+
+    
+    [Header("Perlin Noise")]
+    [SerializeField] private float perlinMaxY = -1f;
+    [SerializeField] private float perlinNoiseScale = 2f;
+    [SerializeField] private float pogNormalizedDuration = 0.9f;
 
     public bool Done { get; private set; }
 
@@ -33,22 +48,18 @@ public class UnlockSlammerRig : MonoBehaviour {
     private float Pi2 = Mathf.PI * 2;
     private GameObject[] pogs;
     private GameObject slammer;
+    private GameObject pedestal;
     private AnimTimeTracker generalTimeTracker;
     private AnimTimeTracker slammerTimeTracker;
     private AnimTimeTracker radiousTimeTracker;
-    private bool pogsInAnimation = false;
-    private bool slammerInAnimation = false;
-    private bool radiousInAnimation = false;
-    private bool cameraChanged = false;
+    private bool pogsInAnimation;
+    private bool slammerInAnimation;
+    private bool radiousInAnimation;
+    private bool cameraChanged;
     private Vector3 slammerInitialPosition;
-    private Vector3 slammerInitialScale = Vector3.one * 1.8f;
-    private Vector3 slammerFinalScale = Vector3.one * 0.3f;
     private float initialRadious;
     private UnlockSlammerData unlockSlammerData;
     private float[] perlinY;
-    private float perlinMaxY = -1f;
-    private float perlinNoiseScale = 2f;
-    private float pogNormalizedDuration = 0.9f;
     private float[] time;
 
     public class UnlockSlammerData
@@ -97,7 +108,7 @@ public class UnlockSlammerRig : MonoBehaviour {
             return;
             #endif
         }
-        StartCoroutine(initSequenceCoroutine(0.6f));
+        StartCoroutine(initSequenceCoroutine(0.8f));
     }
 
     private IEnumerator initSequenceCoroutine(float delay)
@@ -106,12 +117,10 @@ public class UnlockSlammerRig : MonoBehaviour {
         instantiateObjects();
         initialRadious = radious;
 		yield return new WaitForSecondsRealtime(delay);
-		yield return new WaitForSecondsRealtime(0.15f);
         
         setupBezierCurve();
         setupTime();
         setupPerlinY(unlockSlammerData.pogIDs.Length);
-        //setperlinMaxY(unlockSlammerData.pogIDs.Length);
     }
 
     private void setupBezierCurve()
@@ -144,33 +153,25 @@ public class UnlockSlammerRig : MonoBehaviour {
         }
     }
 
-    private void setperlinMaxY(int pogs)
-    {
-        for (int i = 0; i < pogs; i++)
-        {
-            perlinY[i] = perlinY[i] - perlinMaxY / 2;
-        }
-    }
-
     void Update()
     {
         rotateSlammer();
         if (pogsInAnimation)
         {
-            if ((generalTimeTracker.U >= 0.35f) && !cameraChanged)
+            if ((generalTimeTracker.U >= whenToMoveCirlceToSlammer) && !cameraChanged)
             {
                 //changeCameraLocation("UnlockSlammer1");
                 moveCircleCenterToSlammer();
                 cameraChanged = true;
             }
-            if (generalTimeTracker.U >= 0.5f)
+            if (generalTimeTracker.U >= whenShowSpecialFX)
                 if(!VisualFX.activeSelf)
                     VisualFX.SetActive(true);
 
-            if (generalTimeTracker.U >= 0.7f)
+            if (generalTimeTracker.U >= whenRadiousAnimation)
                 setRadiousAnimationTime();
 
-            if(generalTimeTracker.U >= 0.83f)
+            if(generalTimeTracker.U >= whenContemplateSlammer)
                 contemplateSlammer();
 
             
@@ -280,13 +281,13 @@ public class UnlockSlammerRig : MonoBehaviour {
         slammerInAnimation = true;
     }
 
-
     private IEnumerator destroyAndGoBackToSolo(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
         Done = true;
         if(slammer != null)
             Destroy(slammer);
+        Destroy(pedestal);
         Destroy(gameObject);
     }
 
@@ -295,7 +296,6 @@ public class UnlockSlammerRig : MonoBehaviour {
         for (int i = 0; i < unlockSlammerData.pogIDs.Length; i++)
             Destroy(pogs[i]);
     }
-
 
    private void instantiateObjects()
     {
@@ -309,7 +309,7 @@ public class UnlockSlammerRig : MonoBehaviour {
         slammer.transform.rotation = slammerPosition.transform.rotation;
         
         
-        var pedestal = (GameObject)Instantiate(pedestalGO, slammerPosition.transform.position + (Vector3.up * -10.5f), slammerPosition.transform.rotation);
+        pedestal = Instantiate(pedestalGO, slammerPosition.transform.position + (Vector3.up * -10.5f), slammerPosition.transform.rotation);
         slammer.transform.localScale = slammerInitialScale;
         slammerInitialPosition = slammerPosition.transform.position;
     }
@@ -409,7 +409,6 @@ public class UnlockSlammerRig : MonoBehaviour {
 
     private void moveCircleCenterToSlammer()
     {
-
 /*
         var movement = centerPos.GetComponent<ObjectMovement>();
         movement.SetMovement(
