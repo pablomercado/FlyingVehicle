@@ -46,7 +46,10 @@ public class UnlockSlammerRig : MonoBehaviour {
     [SerializeField] private float perlinNoiseYNumber1 = 7.777f;
     [SerializeField] private float perlinNoiseYNumber2 = 25f;
 
-    [Space(5)] [Header("Gizmos")] [SerializeField] private Vector3 wireCubeSize = new Vector3(2, 2, 2);
+    [Space(5)] [Header("Gizmos")]
+    [SerializeField] private Vector3 wireCubeSize = new Vector3(2, 2, 2);
+    [SerializeField] private float wirePhereSize = 2f;
+    [SerializeField] private float gizmoCurvePresicion = 20f;
     
     
     public bool Done { get; private set; }
@@ -273,7 +276,7 @@ public class UnlockSlammerRig : MonoBehaviour {
     {
         pogsInAnimation = false;
         destroyPogs();
-        //VisualFX.SetActive(true);
+        VisualFX.SetActive(true);
 //        changeCameraLocation("UnlockSlammer2");
         StartCoroutine(setSlammerAnimationTime(7f)); 
     }
@@ -329,7 +332,6 @@ public class UnlockSlammerRig : MonoBehaviour {
     {
         if (unlockSlammerData == null)
             CreateMockupSetup();
-
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(centerPos.transform.position, Vector3.one);
         Gizmos.color = Color.green;
@@ -337,7 +339,6 @@ public class UnlockSlammerRig : MonoBehaviour {
         
         for (var i = 0; i < unlockSlammerData.pogIDs.Length; i++)
         {
-//            Gizmos.DrawLine(getPositionInCircle(unlockSlammerData.pogIDs.Length, i, 0f, centerPos.transform.position), getPositionInCircle(unlockSlammerData.pogIDs.Length, i+1, 0f, centerPos.transform.position));
             var u1 = (float)i / unlockSlammerData.pogIDs.Length;
             var u2 = (float)(i + 1) / unlockSlammerData.pogIDs.Length;
             Gizmos.DrawLine(Anim.GetPositionAroundCircle(u1, radious, centerPos.transform.position), Anim.GetPositionAroundCircle(u2, radious, centerPos.transform.position));
@@ -345,16 +346,14 @@ public class UnlockSlammerRig : MonoBehaviour {
 
         Gizmos.color = Color.blue;
         for (int i = 0; i<bezierPointsGO.Length; i++)
-            Gizmos.DrawWireSphere(bezierPointsGO[i].transform.position, 1f);
-        var curvePresicion = 20f;
-         for (var t = 0; t < curvePresicion; t++)
+            Gizmos.DrawWireSphere(bezierPointsGO[i].transform.position, wirePhereSize);
+         for (var t = 0; t < gizmoCurvePresicion; t++)
          {
             Gizmos.color = Color.cyan;
-//            Gizmos.DrawLine(bezierEvaluator.Evaluate(t / (float)curvePresicion), bezierEvaluator.Evaluate((t + 1) / (float)curvePresicion));
-            Gizmos.DrawLine(bezierS1(t / (float)curvePresicion), bezierS1((t + 1) / (float)curvePresicion));
-            Gizmos.DrawLine(bezierS2(t / (float)curvePresicion), bezierS2((t + 1) / (float)curvePresicion));
-            Gizmos.DrawLine(bezierS3(t / (float)curvePresicion), bezierS3((t + 1) / (float)curvePresicion));
-            Gizmos.DrawLine(bezierS4(t / (float)curvePresicion), bezierS4((t + 1) / (float)curvePresicion));
+            Gizmos.DrawLine(bezierS1(t / gizmoCurvePresicion), bezierS1((t + 1) / gizmoCurvePresicion));
+            Gizmos.DrawLine(bezierS2(t / gizmoCurvePresicion), bezierS2((t + 1) / gizmoCurvePresicion));
+            Gizmos.DrawLine(bezierS3(t / gizmoCurvePresicion), bezierS3((t + 1) / gizmoCurvePresicion));
+            Gizmos.DrawLine(bezierS4(t / gizmoCurvePresicion), bezierS4((t + 1) / gizmoCurvePresicion));
           }
     }
 
