@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Diagnostics;
+using UnityEditor;
+using Debug = UnityEngine.Debug;
 
 public class ShipController : MonoBehaviour {
 
@@ -32,14 +35,30 @@ public class ShipController : MonoBehaviour {
         Camera.main.transform.LookAt(transform.position + transform.forward * 30f);
 
         movingVector = transform.forward * Time.deltaTime * Speed * TurboScalar;
-
         transform.position += movingVector;
-        transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal") * 3f);
+        
+//        transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal") * 3f);
 //        transform.Rotate(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), 0f);
-        //Debug.Log(movingVector.magnitude);
+        transform.Rotate(Input.GetAxis("Vertical"), 0f, 0f);
+        if (Input.GetAxis("Horizontal") <= -.03f || Input.GetAxis("Horizontal") >= .03f)
+        {
+            if (transform.localEulerAngles.z < 90 || transform.localEulerAngles.z > 270)
+            {
+                transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal"));
+            }
+            transform.Rotate(0, Input.GetAxis("Horizontal"), 0, Space.World);
+        }
+        else
+        {
+            if(transform.eulerAngles.z <= 180)
+                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0), 0.05f);
+            else
+                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.05f);
+        }
+            Debug.Log(transform.rotation.eulerAngles.y);        
         
         
-         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
+        float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
 
         if (shipTerrainHight > transform.position.y)
             transform.position = new Vector3(transform.position.x,

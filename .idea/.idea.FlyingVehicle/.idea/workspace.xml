@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01b3fd8f-69a7-45e9-b9a7-b70687cf8bfa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/New Terrain.asset" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/New Terrain.asset.meta" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-2f935792c7dd546728036aaf0ac5bc41" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3a8c635c2321c430f9e0957de595826a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3ef748a68cf8746a9bdb01a9cbb2623a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-404533adedca6481a92821d92a7a3da0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-4f1ca10fe741a4c399e46141af01c71d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5850660da52f54a2ca66377997385595" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-747d8189e106a4139b5400b2735f442b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7bc735b00f61e4eceadd892a8871edcd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-97beb2f6c382948d7986471b00009bb7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a17cd9bee92d74b53a0eacf7dca7b7cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e32f5ad87eedf4d1ba526e51664e844e" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/HomingMissile.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/HomingMissile.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scenes/TestControl02.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/TestControl02.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/AnnotationManager" afterPath="$PROJECT_DIR$/Library/AnnotationManager" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000003000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000003000000000000000" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/67/67f2a3b426f56514a93e0c4d993ba2a7" afterPath="$PROJECT_DIR$/Library/metadata/67/67f2a3b426f56514a93e0c4d993ba2a7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235" afterPath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235.info" afterPath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/dd/ddf98d6eef37d5148ba250bc03d7fc75" afterPath="$PROJECT_DIR$/Library/metadata/dd/ddf98d6eef37d5148ba250bc03d7fc75" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/EditorInstance.json" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,7 +23,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53264296">
+    <splitter split-orientation="horizontal" split-proportion="0.68392617">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="UnlockSlammerRig.cs" pinned="false" current-in-tab="false">
@@ -111,44 +85,48 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ShipController.cs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ShipController.cs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+                <state relative-caret-position="805">
+                  <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                   <folding>
-                    <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
-                    <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
-                    <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
-                    <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="6:122" ph="..." />
+                    <marker date="1507199913000" expanded="true" signature="168:4042" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="616:3446" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="1065:1246" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), 0f, -Input.GetAxis(&quot;Horizontal&quot;) * 3f); ... */" />
+                    <marker date="1507199913000" expanded="true" signature="1396:1683" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="1495:1595" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="1696:2122" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="2700:2819" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="2838:2957" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="2981:3100" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="3324:3442" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="3505:4040" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="3552:4034" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="3637:4024" ph="{...}" />
+                    <marker date="1507199913000" expanded="true" signature="3753:3968" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomingMissile.cs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HomingMissile.cs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="738">
-                  <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+                <state relative-caret-position="324">
+                  <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
                   <folding>
-                    <marker date="1507192902000" expanded="true" signature="6:143" ph="..." />
-                    <marker date="1507192902000" expanded="true" signature="188:2459" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="431:528" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="571:1120" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="785:1083" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="940:1073" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="1141:1725" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="1773:2230" ph="{...}" />
-                    <marker date="1507192902000" expanded="true" signature="1780:2006" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
-                    <marker date="1507192902000" expanded="true" signature="2275:2456" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="6:143" ph="..." />
+                    <marker date="1507193507000" expanded="true" signature="188:2458" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="430:527" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="570:1119" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="784:1082" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="939:1072" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="1140:1724" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="1772:2229" ph="{...}" />
+                    <marker date="1507193507000" expanded="true" signature="1779:2005" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
+                    <marker date="1507193507000" expanded="true" signature="2274:2455" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -234,6 +212,9 @@
       <find>pedestal</find>
       <find>destroy</find>
       <find>ShipController</find>
+      <find>input</find>
+      <find>debug</find>
+      <find>Debug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,8 +234,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BezierEvaluator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
       </list>
     </option>
   </component>
@@ -466,12 +447,12 @@
       <workItem from="1507090607249" duration="2459000" />
       <workItem from="1507098990973" duration="6596000" />
       <workItem from="1507171570233" duration="6444000" />
-      <workItem from="1507187410576" duration="4072000" />
+      <workItem from="1507187410576" duration="9061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19571000" />
+    <option name="totallyTimeSpent" value="24560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -584,17 +565,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
-            <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
-            <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="6:122" ph="..." />
+            <marker date="1507199913000" expanded="true" signature="168:4042" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="616:3446" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1065:1246" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), 0f, -Input.GetAxis(&quot;Horizontal&quot;) * 3f); ... */" />
+            <marker date="1507199913000" expanded="true" signature="1396:1683" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1495:1595" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1696:2122" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2700:2819" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2838:2957" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2981:3100" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3324:3442" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3505:4040" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3552:4034" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3637:4024" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3753:3968" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -792,41 +777,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+        <state relative-caret-position="324">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
-            <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
-            <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
-            <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="6:143" ph="..." />
+            <marker date="1507193507000" expanded="true" signature="188:2458" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="430:527" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="570:1119" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="784:1082" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="939:1072" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="1140:1724" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="1772:2229" ph="{...}" />
+            <marker date="1507193507000" expanded="true" signature="1779:2005" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
+            <marker date="1507193507000" expanded="true" signature="2274:2455" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="805">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <marker date="1507192902000" expanded="true" signature="6:143" ph="..." />
-            <marker date="1507192902000" expanded="true" signature="188:2459" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="431:528" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="571:1120" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="785:1083" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="940:1073" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="1141:1725" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="1773:2230" ph="{...}" />
-            <marker date="1507192902000" expanded="true" signature="1780:2006" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
-            <marker date="1507192902000" expanded="true" signature="2275:2456" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="6:122" ph="..." />
+            <marker date="1507199913000" expanded="true" signature="168:4042" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="616:3446" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1065:1246" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), 0f, -Input.GetAxis(&quot;Horizontal&quot;) * 3f); ... */" />
+            <marker date="1507199913000" expanded="true" signature="1396:1683" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1495:1595" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="1696:2122" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2700:2819" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2838:2957" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="2981:3100" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3324:3442" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3505:4040" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3552:4034" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3637:4024" ph="{...}" />
+            <marker date="1507199913000" expanded="true" signature="3753:3968" ph="{...}" />
           </folding>
         </state>
       </provider>

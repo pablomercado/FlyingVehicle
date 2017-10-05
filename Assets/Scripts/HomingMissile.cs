@@ -12,7 +12,6 @@ public class HomingMissile : MonoBehaviour {
     private GameObject[] targets;
 	private GameObject closestTarget;
     
-
     void Start()
     {
         StartCoroutine(waitToDestroy());
