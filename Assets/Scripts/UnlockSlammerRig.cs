@@ -7,6 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class UnlockSlammerRig : MonoBehaviour {
     [SerializeField] private float pogStartScale = 1f;
+    [SerializeField] private float delayBeforeAnimation = 0f;
     [SerializeField] private GameObject pogGO;
     [SerializeField] private GameObject slammerGO;
     [SerializeField] private GameObject pedestalGO;
@@ -19,12 +20,16 @@ public class UnlockSlammerRig : MonoBehaviour {
     [SerializeField] private float circleAnimationDuration = 5f;
     [SerializeField] private float singleLoopTime = 2f;
     [SerializeField] private float splineAnimationDuration = 2f;
+    [SerializeField] private float splineToCircleLerpThreshold = .75f;
     [SerializeField] private float slammerAnimationDuration = 0.8f;
     [SerializeField] private float radiousAnimationTime = 1.5f;
     [SerializeField] private AnimationCurve animationCurve;
     [SerializeField] private GameObject slammerPosition;
     [SerializeField] private Vector3 slammerInitialScale = Vector3.one * 1.8f;
     [SerializeField] private Vector3 slammerFinalScale = Vector3.one * 0.3f;
+    [SerializeField] private Vector3 slammerRotationAxis = Vector3.up;
+    [SerializeField] private float slammerRotationSpeed = 10f;
+    [SerializeField] private Vector3 pedestalPositionRelativeToSlammer = new Vector3(0, -10.5f, 0);
 
     [Space(5)]
     [Header("Sequence timming")]
@@ -33,12 +38,17 @@ public class UnlockSlammerRig : MonoBehaviour {
     [Range(0f, 1f)] [SerializeField] private float whenRadiousAnimation = 0.7f;
     [Range(0f, 1f)] [SerializeField] private float whenContemplateSlammer = 0.83f;
 
-    
+    [Space(5)]
     [Header("Perlin Noise")]
     [SerializeField] private float perlinMaxY = -1f;
     [SerializeField] private float perlinNoiseScale = 2f;
     [SerializeField] private float pogNormalizedDuration = 0.9f;
+    [SerializeField] private float perlinNoiseYNumber1 = 7.777f;
+    [SerializeField] private float perlinNoiseYNumber2 = 25f;
 
+    [Space(5)] [Header("Gizmos")] [SerializeField] private Vector3 wireCubeSize = new Vector3(2, 2, 2);
+    
+    
     public bool Done { get; private set; }
 
     private BezierEvaluator bezierEvaluator;
@@ -108,7 +118,7 @@ public class UnlockSlammerRig : MonoBehaviour {
             return;
             #endif
         }
-        StartCoroutine(initSequenceCoroutine(0.8f));
+        StartCoroutine(initSequenceCoroutine(delayBeforeAnimation));
     }
 
     private IEnumerator initSequenceCoroutine(float delay)
@@ -145,10 +155,10 @@ public class UnlockSlammerRig : MonoBehaviour {
     private void setupPerlinY(int pogs, float t = 0f)
     {
         perlinY = new float[pogs];
-        for (var i=0; i<pogs; i++)
+        for (var i = 0; i < pogs; i++)
         {
-            perlinY[i] = Mathf.PerlinNoise(t, (i * 7.777f) / perlinNoiseScale) * 25;
-            if(perlinMaxY < 0)
+            perlinY[i] = Mathf.PerlinNoise(t, (i * perlinNoiseYNumber1) / perlinNoiseScale) * perlinNoiseYNumber2;
+            if (perlinMaxY < 0)
                 if (perlinY[i] > perlinMaxY) perlinMaxY = perlinY[i];
         }
     }
@@ -204,7 +214,7 @@ public class UnlockSlammerRig : MonoBehaviour {
             rotation = Anim.GetRotationInCircle(splineU);
             if (splineU > 0.75f)
             {
-                var lerpT = (splineU - .75f) / .25f;
+                var lerpT = (splineU - splineToCircleLerpThreshold) / (1f - splineToCircleLerpThreshold);
                 var cU = (time[pogIndex] % singleLoopTime) / singleLoopTime;
                 position = Vector3.Lerp(position,Anim.GetPositionAroundCircle(cU, radious, centerPos.transform.position, true), lerpT);
                 rotation = Vector3.Lerp(rotation, Anim.GetRotationInCircle(cU, true), lerpT);
@@ -255,7 +265,8 @@ public class UnlockSlammerRig : MonoBehaviour {
     private void rotateSlammer()
     {
         if(slammer != null)
-            slammer.transform.rotation = Quaternion.Euler(new Vector3(90, -45 * Time.unscaledTime, 0));
+            slammer.transform.rotation = Quaternion.Euler(slammerRotationAxis * Time.unscaledTime * slammerRotationSpeed);
+        
     }
 
     public void contemplateSlammer()
@@ -309,7 +320,7 @@ public class UnlockSlammerRig : MonoBehaviour {
         slammer.transform.rotation = slammerPosition.transform.rotation;
         
         
-        pedestal = Instantiate(pedestalGO, slammerPosition.transform.position + (Vector3.up * -10.5f), slammerPosition.transform.rotation);
+        pedestal = Instantiate(pedestalGO, slammerPosition.transform.position + pedestalPositionRelativeToSlammer, slammerPosition.transform.rotation);
         slammer.transform.localScale = slammerInitialScale;
         slammerInitialPosition = slammerPosition.transform.position;
     }
@@ -322,7 +333,7 @@ public class UnlockSlammerRig : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(centerPos.transform.position, Vector3.one);
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(slammerPosition.transform.position, Vector3.one * 2);
+        Gizmos.DrawWireCube(slammerPosition.transform.position, wireCubeSize);
         
         for (var i = 0; i < unlockSlammerData.pogIDs.Length; i++)
         {
