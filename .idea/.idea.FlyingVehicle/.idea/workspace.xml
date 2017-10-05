@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01b3fd8f-69a7-45e9-b9a7-b70687cf8bfa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/UnlockSlammerRig.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnlockSlammerRig.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/ec/ec38a995662a9444aaaf15bf1469ae1b" afterPath="$PROJECT_DIR$/Library/metadata/ec/ec38a995662a9444aaaf15bf1469ae1b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs" />
-    </list>
+    <list default="true" id="01b3fd8f-69a7-45e9-b9a7-b70687cf8bfa" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -389,12 +379,12 @@
       <updated>1507090602866</updated>
       <workItem from="1507090607249" duration="2459000" />
       <workItem from="1507098990973" duration="6596000" />
-      <workItem from="1507171570233" duration="5522000" />
+      <workItem from="1507171570233" duration="5621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14577000" />
+    <option name="totallyTimeSpent" value="14676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
