@@ -50,10 +50,6 @@ public class HomingMissile : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-//        ContactPoint contact = collision.contacts[0];
-//        Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-//        Vector3 pos = contact.point;
-//        Instantiate(explosionPrefab, pos, rot);
         if (collision.gameObject.tag == "MissileTarget")
             Destroy(collision.gameObject);
         var explosion = Instantiate(Explosion, transform.position, Quaternion.identity);

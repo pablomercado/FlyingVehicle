@@ -55,7 +55,7 @@ public class ShipController : MonoBehaviour {
             else
                 transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.05f);
         }
-            Debug.Log(transform.rotation.eulerAngles.y);        
+//            Debug.Log(transform.rotation.eulerAngles.y);        
         
         
         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
