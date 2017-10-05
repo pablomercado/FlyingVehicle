@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01b3fd8f-69a7-45e9-b9a7-b70687cf8bfa" name="Default" comment="" />
+    <list default="true" id="01b3fd8f-69a7-45e9-b9a7-b70687cf8bfa" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/New Terrain.asset" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/New Terrain.asset.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-2f935792c7dd546728036aaf0ac5bc41" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3a8c635c2321c430f9e0957de595826a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3ef748a68cf8746a9bdb01a9cbb2623a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-404533adedca6481a92821d92a7a3da0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-4f1ca10fe741a4c399e46141af01c71d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5850660da52f54a2ca66377997385595" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-747d8189e106a4139b5400b2735f442b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7bc735b00f61e4eceadd892a8871edcd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-97beb2f6c382948d7986471b00009bb7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a17cd9bee92d74b53a0eacf7dca7b7cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e32f5ad87eedf4d1ba526e51664e844e" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/HomingMissile.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/HomingMissile.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scenes/TestControl02.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/TestControl02.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/AnnotationManager" afterPath="$PROJECT_DIR$/Library/AnnotationManager" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/assetDatabase3" afterPath="$PROJECT_DIR$/Library/assetDatabase3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/00/00000000000000003000000000000000" afterPath="$PROJECT_DIR$/Library/metadata/00/00000000000000003000000000000000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28.info" afterPath="$PROJECT_DIR$/Library/metadata/4f/4fc61cce3add64a52a276412bae38f28.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/67/67f2a3b426f56514a93e0c4d993ba2a7" afterPath="$PROJECT_DIR$/Library/metadata/67/67f2a3b426f56514a93e0c4d993ba2a7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235" afterPath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235.info" afterPath="$PROJECT_DIR$/Library/metadata/80/8004a2a2ffeff6f45aa75890bf005235.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/metadata/dd/ddf98d6eef37d5148ba250bc03d7fc75" afterPath="$PROJECT_DIR$/Library/metadata/dd/ddf98d6eef37d5148ba250bc03d7fc75" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.FlyingVehicle/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/EditorInstance.json" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,16 +49,16 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4263845">
+    <splitter split-orientation="horizontal" split-proportion="0.53264296">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UnlockSlammerRig.cs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UnlockSlammerRig.cs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-5577">
+                <state relative-caret-position="162">
                   <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
                   <folding>
-                    <marker date="1507177805000" expanded="true" signature="6:167" ph="..." />
+                    <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
                     <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
                     <marker date="1507177805000" expanded="true" signature="3475:3587" ph="{...}" />
                     <marker date="1507177805000" expanded="true" signature="3634:3972" ph="{...}" />
@@ -73,6 +111,49 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="ShipController.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="443">
+                  <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+                  <folding>
+                    <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
+                    <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
+                    <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
+                    <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomingMissile.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="738">
+                  <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+                  <folding>
+                    <marker date="1507192902000" expanded="true" signature="6:143" ph="..." />
+                    <marker date="1507192902000" expanded="true" signature="188:2459" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="431:528" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="571:1120" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="785:1083" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="940:1073" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="1141:1725" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="1773:2230" ph="{...}" />
+                    <marker date="1507192902000" expanded="true" signature="1780:2006" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
+                    <marker date="1507192902000" expanded="true" signature="2275:2456" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -80,8 +161,8 @@
           <file leaf-file-name="UnlockSlammerRig.cs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="828">
-                  <caret line="51" column="54" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="54" />
+                <state relative-caret-position="612">
+                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding>
                     <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
                     <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
@@ -152,6 +233,7 @@
       <find>text</find>
       <find>pedestal</find>
       <find>destroy</find>
+      <find>ShipController</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +242,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BezierEvaluator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Pog/Assets/Scripts/ObjectMovement.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Pog/Assets/Scripts/AnimatedObjects/UnlockSlammerRig.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -169,6 +253,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BezierEvaluator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
       </list>
     </option>
   </component>
@@ -379,12 +465,13 @@
       <updated>1507090602866</updated>
       <workItem from="1507090607249" duration="2459000" />
       <workItem from="1507098990973" duration="6596000" />
-      <workItem from="1507171570233" duration="5621000" />
+      <workItem from="1507171570233" duration="6444000" />
+      <workItem from="1507187410576" duration="4072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14676000" />
+    <option name="totallyTimeSpent" value="19571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -409,7 +496,6 @@
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13242188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21056548" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -419,6 +505,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21056548" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -430,7 +517,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -440,7 +527,84 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1507177805000" expanded="true" signature="6:167" ph="..." />
+            <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
+            <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="3475:3587" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="3634:3972" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4020:4234" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4087:4227" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4315:4351" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4383:4704" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4427:4629" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="4764:5067" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="5104:5400" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="5431:5707" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="5762:6085" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="5842:6079" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="6104:7319" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="6164:7186" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="6261:6430" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="6841:7176" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="6929:7162" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="7373:9146" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="7673:8409" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="7900:8399" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="8422:8743" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="9184:9584" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="9228:9475" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="9488:9578" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="9619:9858" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="9902:9982" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="10016:10188" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="10226:10432" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="10494:10885" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="10618:10716" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="10946:11149" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="11181:11289" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="11327:12026" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="11399:11533" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="12051:13489" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="12425:12756" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="13001:13483" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="13561:13779" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="13818:14109" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="14148:14439" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="14478:14769" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="14812:15106" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="15166:15636" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="15269:15480" ph="/* Transform target = BottomNavigationController.Instance.GetNavigationButton(NavigationButtonID.Collection).tran ... */" />
+            <marker date="1507177805000" expanded="true" signature="15682:15978" ph="{...}" />
+            <marker date="1507177805000" expanded="true" signature="15689:15967" ph="/* var movement = centerPos.GetComponent&lt;ObjectMovement&gt;(); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
+            <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
+            <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
             <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3475:3587" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3634:3972" ph="{...}" />
@@ -497,7 +661,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1507177805000" expanded="true" signature="6:167" ph="..." />
+            <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
             <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3475:3587" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3634:3972" ph="{...}" />
@@ -573,10 +737,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnlockSlammerRig.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5577">
+        <state relative-caret-position="162">
           <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
-            <marker date="1507177805000" expanded="true" signature="6:167" ph="..." />
+            <marker date="1507177805000" expanded="false" signature="6:167" ph="..." />
             <marker date="1507177805000" expanded="true" signature="215:15981" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3475:3587" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="3634:3972" ph="{...}" />
@@ -624,6 +788,45 @@
             <marker date="1507177805000" expanded="true" signature="15269:15480" ph="/* Transform target = BottomNavigationController.Instance.GetNavigationButton(NavigationButtonID.Collection).tran ... */" />
             <marker date="1507177805000" expanded="true" signature="15682:15978" ph="{...}" />
             <marker date="1507177805000" expanded="true" signature="15689:15967" ph="/* var movement = centerPos.GetComponent&lt;ObjectMovement&gt;(); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+          <folding>
+            <marker date="1507188226000" expanded="true" signature="6:44" ph="..." />
+            <marker date="1507188226000" expanded="true" signature="90:3059" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1071:1203" ph="/* transform.Rotate(Input.GetAxis(&quot;Vertical&quot;), Input.GetAxis(&quot;Horizontal&quot;), 0f); ... */" />
+            <marker date="1507188226000" expanded="true" signature="1717:1836" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1855:1974" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="1998:2117" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2341:2459" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2522:3057" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2569:3051" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2654:3041" ph="{...}" />
+            <marker date="1507188226000" expanded="true" signature="2770:2985" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <marker date="1507192902000" expanded="true" signature="6:143" ph="..." />
+            <marker date="1507192902000" expanded="true" signature="188:2459" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="431:528" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="571:1120" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="785:1083" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="940:1073" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="1141:1725" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="1773:2230" ph="{...}" />
+            <marker date="1507192902000" expanded="true" signature="1780:2006" ph="/* ContactPoint contact = collision.contacts[0]; ... */" />
+            <marker date="1507192902000" expanded="true" signature="2275:2456" ph="{...}" />
           </folding>
         </state>
       </provider>

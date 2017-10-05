@@ -34,10 +34,12 @@ public class ShipController : MonoBehaviour {
         movingVector = transform.forward * Time.deltaTime * Speed * TurboScalar;
 
         transform.position += movingVector;
-        transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal"));
+        transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal") * 3f);
+//        transform.Rotate(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), 0f);
         //Debug.Log(movingVector.magnitude);
-
-        float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
+        
+        
+         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
 
         if (shipTerrainHight > transform.position.y)
             transform.position = new Vector3(transform.position.x,
