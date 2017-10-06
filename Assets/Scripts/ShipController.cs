@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Diagnostics;
-using UnityEditor;
-using Debug = UnityEngine.Debug;
 
 public class ShipController : MonoBehaviour {
 
-    public GameObject Bullet;
+    public GameObject Missile;
 
     [SerializeField] Rigidbody Rigidbody;
     [SerializeField] float Speed = 90f;
@@ -89,7 +86,7 @@ public class ShipController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(Bullet, transform.position + transform.forward * 5f, transform.rotation);
+            Instantiate(Missile, transform.position + transform.forward * 5f, transform.rotation);
         }
 
 	}

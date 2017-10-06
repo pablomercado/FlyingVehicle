@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 
-    private float Speed = 250f;
+    [SerializeField] private GameObject explosionGO;
+    [SerializeField] private float Speed = 250f;
     private Vector3 movingVector;
-
 	// Update is called once per frame
 	void Update () {
 
@@ -13,4 +13,11 @@ public class Bullet : MonoBehaviour {
         transform.position += movingVector;
 
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        var explosion = Instantiate(explosionGO, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+    
 }

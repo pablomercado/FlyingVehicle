@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Gun : MonoBehaviour {
+public class Gun : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	[SerializeField] private GameObject bulletGO;
+
+		void Update () {
+		if (Input.GetKeyDown(KeyCode.F))
+		{
+			Instantiate(bulletGO, transform.position + transform.forward * 5f, transform.rotation);
+		}
 	}
 }
