@@ -8,15 +8,11 @@ public class ShipController : MonoBehaviour {
 
     public GameObject Bullet;
 
-    [SerializeField]
-    Rigidbody Rigidbody;
-
-    [SerializeField]
-    float Speed = 90f;
-
-    [SerializeField]
-    float TurboScalar = 1f;
-
+    [SerializeField] Rigidbody Rigidbody;
+    [SerializeField] float Speed = 90f;
+    [SerializeField] float TurboScalar = 1f;
+    [SerializeField] private float turnSpeed = 1f;
+    [SerializeField] private GameObject explosionFX;
     public AnimationCurve transitionCurve;
 
     private Vector3 movingVector;
@@ -25,6 +21,7 @@ public class ShipController : MonoBehaviour {
 
     private string currentAction;
     private string prevAction;
+    
 
     // Update is called once per frame
     void Update() {
@@ -42,18 +39,18 @@ public class ShipController : MonoBehaviour {
         transform.Rotate(Input.GetAxis("Vertical"), 0f, 0f);
         if (Input.GetAxis("Horizontal") <= -.03f || Input.GetAxis("Horizontal") >= .03f)
         {
-            if (transform.localEulerAngles.z < 90 || transform.localEulerAngles.z > 270)
+            if (transform.localEulerAngles.z < 60 || transform.localEulerAngles.z > 300)
             {
-                transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal"));
+                transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal")* turnSpeed);
             }
-            transform.Rotate(0, Input.GetAxis("Horizontal"), 0, Space.World);
+            transform.Rotate(0, Input.GetAxis("Horizontal") * turnSpeed, 0, Space.World);
         }
         else
         {
             if(transform.eulerAngles.z <= 180)
-                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0), 0.05f);
+                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0), 0.1f);
             else
-                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.05f);
+                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.1f);
         }
 //            Debug.Log(transform.rotation.eulerAngles.y);        
         
@@ -97,6 +94,12 @@ public class ShipController : MonoBehaviour {
 
 	}
 
+    void OnCollisionEnter(Collision collision)
+    {
+        var explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+    
     IEnumerator TransitionTurboScalator(float a, float b)
     {
         if (prevAction != currentAction)

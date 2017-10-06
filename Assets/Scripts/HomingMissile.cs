@@ -40,7 +40,7 @@ public class HomingMissile : MonoBehaviour {
 	    if (closestTarget == null)
 	        closestTarget = getClosestTarget();
         Vector3 targetDirection = closestTarget.transform.position - transform.position;
-        float step = speed * Time.deltaTime * .035f;
+        float step = speed * Time.deltaTime * .015f;
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, step, 0.0F);
         transform.rotation = Quaternion.LookRotation(newDirection);
         Vector3 movingVector = (transform.forward * Time.deltaTime * speed);
@@ -59,8 +59,10 @@ public class HomingMissile : MonoBehaviour {
     private IEnumerator waitToDestroy()
     {
         yield return new WaitForSeconds(lifeTime);
-        var explosion = Instantiate(Explosion, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().isKinematic = false;
+        transform.Find("Particles").gameObject.SetActive(false);
+//        var explosion = Instantiate(Explosion, transform.position, Quaternion.identity);
+//        Destroy(gameObject);
     }
-
 }
