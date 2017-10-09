@@ -6,8 +6,9 @@ public class ShipController : MonoBehaviour {
     public GameObject Missile;
 
     [SerializeField] Rigidbody Rigidbody;
-    [SerializeField] float Speed = 90f;
-    [SerializeField] float TurboScalar = 1f;
+    [SerializeField] float normalSpeed = 90f;
+    [SerializeField] float turboSpeed = 150f;
+    [SerializeField] float brakeSpeed = 20f;
     [SerializeField] private float turnSpeed = 1f;
     [SerializeField] private GameObject explosionFX;
     public AnimationCurve transitionCurve;
@@ -15,12 +16,17 @@ public class ShipController : MonoBehaviour {
     private Vector3 movingVector;
     private bool turboing;
     private bool coroutineRunning = false;
-
+    private float currentSpeed;
+    
     private string currentAction;
     private string prevAction;
-    
 
-    // Update is called once per frame
+
+    void start()
+    {
+        currentSpeed = normalSpeed;
+    }    
+    
     void Update() {
 
         Vector3 moveCamTo = transform.position - transform.forward * 3f + Vector3.up * 2f;
@@ -28,11 +34,9 @@ public class ShipController : MonoBehaviour {
         Camera.main.transform.position = Camera.main.transform.position * bias + moveCamTo * (1.0f - bias);
         Camera.main.transform.LookAt(transform.position + transform.forward * 30f);
 
-        movingVector = transform.forward * Time.deltaTime * Speed * TurboScalar;
+        movingVector = transform.forward * Time.deltaTime * currentSpeed;
         transform.position += movingVector;
         
-//        transform.Rotate(Input.GetAxis("Vertical"), 0f, -Input.GetAxis("Horizontal") * 3f);
-//        transform.Rotate(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), 0f);
         transform.Rotate(Input.GetAxis("Vertical"), 0f, 0f);
         if (Input.GetAxis("Horizontal") <= -.03f || Input.GetAxis("Horizontal") >= .03f)
         {
@@ -49,8 +53,6 @@ public class ShipController : MonoBehaviour {
             else
                 transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.1f);
         }
-//            Debug.Log(transform.rotation.eulerAngles.y);        
-        
         
         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
 
@@ -59,62 +61,32 @@ public class ShipController : MonoBehaviour {
                                                 shipTerrainHight,
                                                 transform.position.z);
 
-        bool turbo = Input.GetKey(KeyCode.U);
-        bool brake = Input.GetKey(KeyCode.LeftShift);
+        bool turbo = Input.GetKey(KeyCode.Space);
+        bool brake = Input.GetKey(KeyCode.C);
 
-        if (brake == false && turbo == false)
+        if (turbo)
+            currentSpeed = turboSpeed;
+        else if(brake)
+            currentSpeed = brakeSpeed;
+        else 
+            currentSpeed = normalSpeed;
+        
+        
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            currentAction = "normal";
-            StartCoroutine(TransitionTurboScalator(1f, 1f));
+            Instantiate(Missile, transform.position + transform.forward * 15f, transform.rotation);
         }
-        if (brake)
-        {
-            currentAction = "brake";
-            StartCoroutine(TransitionTurboScalator(1f, .5f));
-        }
-        else if (turbo)
-        { 
-            currentAction = "turbo";
-            StartCoroutine(TransitionTurboScalator(1f, 2f));
-        }
-
-        //Debug.Log((brake == false && turbo == false));
-
-        Speed -= transform.forward.y * Time.deltaTime * TurboScalar;
-        if (Speed < 10f)
-            Speed = 10f;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(Missile, transform.position + transform.forward * 5f, transform.rotation);
-        }
-
 	}
 
     void OnCollisionEnter(Collision collision)
     {
-        var explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if (collision.gameObject.tag != "Missile")
+        {
+            var explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
+            Destroy(gameObject);    
+        }
+        Debug.Log(collision.gameObject);
     }
     
-    IEnumerator TransitionTurboScalator(float a, float b)
-    {
-        if (prevAction != currentAction)
-        {
-            prevAction = currentAction;
-            if (!coroutineRunning)
-            {
-                coroutineRunning = true;
-                float t = 0f;
-                while (t < 1f)
-                {
-                    t += Time.deltaTime;
-                    TurboScalar = Mathf.Lerp(a, b, t);
-                    //Debug.Log("t: " + t);
-                    yield return null;
-                }
-                coroutineRunning = false;
-            }
-        }
-    }
+    
 }
