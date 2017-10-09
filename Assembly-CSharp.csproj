@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Scripts\Anim.cs" />
     <Compile Include="Assets\Scripts\AnimTimeTracker.cs" />
     <Compile Include="Assets\Scripts\Bezier.cs" />
