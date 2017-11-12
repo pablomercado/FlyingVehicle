@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class BezierEvaluator : MonoBehaviour
 {
@@ -31,16 +33,18 @@ public class BezierEvaluator : MonoBehaviour
 
 	private void fillOutPointList(Vector3[] points)
 	{
+		Debug.Log(points[3]);
 		if (points.Length >= 4)
 		{
 			int marker = 0;
-			while (marker + 1 < points.Length)
+			while (marker + 3 < points.Length)
 			{
 				var bsp = new BezierSegmentPoints();
 				bsp.V0 = points[marker];
 				bsp.V1 = points[marker + 1];
 				bsp.V2 = points[marker + 2];
 				bsp.V3 = points[marker + 3];
+				
 				marker += 3;
 				pointList.Add(bsp);
 			}

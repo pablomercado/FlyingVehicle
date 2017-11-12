@@ -13,11 +13,19 @@ public class MoveGroupBezier : MonoBehaviour
 
     private void setupCurve()
     {
-//        bezierEvaluator = new BezierEvaluator();
-//        var bezierPoints = new Vector3[bezierPointsGO.Length];
-//        for (int i = 0; i < bezierPoints.Length; i++)
-//            bezierPoints[i] = bezierPointsGO[i].transform.position;
-//        bezierEvaluator.SetupCurve(bezierPoints);        
+        bezierEvaluator = new BezierEvaluator();
+        var bezierPoints = new Vector3[bezierPointsGO.Length];
+        for (int i = 0; i < bezierPoints.Length; i++)
+            bezierPoints[i] = bezierPointsGO[i].transform.position;
+        bezierEvaluator.SetupCurve(bezierPoints);
+
+        for (int i = 0; i < 20; i++)
+        {
+            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube.transform.position = bezierEvaluator.Evaluate(i/20f);
+        }
+        
+        
     }
     
     void OnDrawGizmos()
