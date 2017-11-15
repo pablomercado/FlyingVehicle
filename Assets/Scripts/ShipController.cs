@@ -11,6 +11,7 @@ public class ShipController : MonoBehaviour {
     [SerializeField] float brakeSpeed = 20f;
     [SerializeField] private float turnSpeed = 1f;
     [SerializeField] private GameObject explosionFX;
+    [SerializeField] private Transform modelTransform;
     public AnimationCurve transitionCurve;
 
     private Vector3 movingVector;
@@ -21,39 +22,81 @@ public class ShipController : MonoBehaviour {
     private string currentAction;
     private string prevAction;
 
+    private float bias = 0.96f;
+
+    private bool useWorldSpaceY;
+
 
     void start()
     {
         currentSpeed = normalSpeed;
     }    
     
-    void Update() {
+    void Update() 
+    {
 
-        Vector3 moveCamTo = transform.position - transform.forward * 3f + Vector3.up * 2f;
-        float bias = 0.96f;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            useWorldSpaceY = !useWorldSpaceY;
+            Debug.Log("Use WSY : " + useWorldSpaceY);
+        }
+
+        Vector3 moveCamTo = transform.position - transform.forward * 3f + transform.up * 2f;
+
         Camera.main.transform.position = Camera.main.transform.position * bias + moveCamTo * (1.0f - bias);
-        Camera.main.transform.LookAt(transform.position + transform.forward * 30f);
+        var targetRotation = Quaternion.LookRotation(transform.position + transform.forward * 30f - Camera.main.transform.position, transform.up);
+        Camera.main.transform.rotation = Quaternion.Slerp(Camera.main.transform.rotation, targetRotation, 0.1f);
+        //Camera.main.transform.LookAt(transform);
 
         movingVector = transform.forward * Time.deltaTime * currentSpeed;
         transform.position += movingVector;
-        
-        transform.Rotate(Input.GetAxis("Vertical"), 0f, 0f);
+
+        float xRotation = Input.GetAxis("Vertical");
+        float yRotation = 0;
+        float zRotation = 0;
+
         if (Input.GetAxis("Horizontal") <= -.03f || Input.GetAxis("Horizontal") >= .03f)
         {
-            if (transform.localEulerAngles.z < 60 || transform.localEulerAngles.z > 300)
-            {
-                transform.Rotate(0f, 0f, -Input.GetAxis("Horizontal")* turnSpeed);
-            }
-            transform.Rotate(0, Input.GetAxis("Horizontal") * turnSpeed, 0, Space.World);
+            if (modelTransform.localEulerAngles.z < 60 || modelTransform.localEulerAngles.z > 300)
+                zRotation = -Input.GetAxis("Horizontal") * turnSpeed;
+
+            yRotation = Input.GetAxis("Horizontal") * turnSpeed;
+        }
+
+        transform.Rotate(xRotation, 0f, 0f);
+
+        if (useWorldSpaceY)
+        {
+            if (Vector3.Dot(transform.up, Vector3.down) > 0)
+                yRotation = -yRotation;    
+            transform.Rotate(0f, yRotation, 0f, Space.World);
         }
         else
         {
-            if(transform.eulerAngles.z <= 180)
-                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0), 0.1f);
-            else
-                transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 360), 0.1f);
+            transform.Rotate(0f, yRotation, 0);
         }
-        
+
+        modelTransform.Rotate(0f, 0f, zRotation);
+
+        if(yRotation == 0)
+        {
+            var localAngles = modelTransform.localEulerAngles;
+            float distanceToZero = localAngles.z;
+            float distanceTo360 = 360 - localAngles.z;
+
+            if (modelTransform.eulerAngles.z < 0)
+            {
+                distanceToZero = 0 - localAngles.z;
+                distanceTo360 = 360 + localAngles.z;
+            }
+
+            if(distanceToZero < distanceTo360)
+                modelTransform.localEulerAngles = Vector3.Lerp(localAngles, new Vector3(0, 0, 0), 0.1f);
+            else
+                modelTransform.localEulerAngles = Vector3.Lerp(localAngles, new Vector3(0, 0, 360), 0.1f);
+        }
+
+
         float shipTerrainHight = Terrain.activeTerrain.SampleHeight(transform.position);
 
         if (shipTerrainHight > transform.position.y)
@@ -62,7 +105,7 @@ public class ShipController : MonoBehaviour {
                                                 transform.position.z);
 
         bool turbo = Input.GetKey(KeyCode.Space);
-        bool brake = Input.GetKey(KeyCode.C);
+        bool brake = Input.GetKey(KeyCode.E);
 
         if (turbo)
             currentSpeed = turboSpeed;
@@ -85,7 +128,6 @@ public class ShipController : MonoBehaviour {
             var explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
             Destroy(gameObject);    
         }
-        Debug.Log(collision.gameObject);
     }
     
     

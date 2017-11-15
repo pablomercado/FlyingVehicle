@@ -18,6 +18,7 @@ public class Bullet : MonoBehaviour {
     {
         var explosion = Instantiate(explosionGO, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        Destroy(explosion, 2f);
     }
     
 }
